@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>WRITE YOUR BLOG</title></head>
+<body>
+
+<form method='post' action={% url 'add_blog' %}>
+{% csrf_token %}
+ 
+ {{  form.as_p  }}
+
+<input type="submit"  value="Proceed" />
+</form>
+
+</body>
+
+</html>
